@@ -34,7 +34,7 @@ public class PaystubsDistributionMailing {
 	private static final String MAIL_SMTP_HOST = "mail.smtp.host";
 	private static final String MAIL_SMTP_STARTTLS_ENABLE = "mail.smtp.starttls.enable";
 	private static final String MAIL_SMTP_AUTH = "mail.smtp.auth";
-	private static final String MAIL_FROM = "Shrithi Salike<ssalike@nisum.com>";
+	private static final String MAIL_FROM = "Shyam Vadikari<svadikari@nisum.com>";
 
 	/**
 	 * @param args
