@@ -34,7 +34,7 @@ public class PaystubsDistributionMailing {
 	private static final String MAIL_SMTP_HOST = "mail.smtp.host";
 	private static final String MAIL_SMTP_STARTTLS_ENABLE = "mail.smtp.starttls.enable";
 	private static final String MAIL_SMTP_AUTH = "mail.smtp.auth";
-	private static final String MAIL_FROM = "svadikari@gmail.com";
+	private static final String MAIL_FROM = "Shrithi Salike<ssalike@nisum.com>";
 
 	/**
 	 * @param args
@@ -43,7 +43,7 @@ public class PaystubsDistributionMailing {
 		File directory = new File("/Paystubs/"
 				+ Calendar.getInstance().getDisplayName(Calendar.MONTH, Calendar.LONG_STANDALONE, Locale.ENGLISH) + " "
 				+ Calendar.getInstance().get(Calendar.YEAR));
-		if (directory != null) {
+		if (directory.exists()) {
 			File files[] = directory.listFiles();
 			if (files != null) {
 				for (File file : files) {
@@ -51,7 +51,7 @@ public class PaystubsDistributionMailing {
 						sendNotificationMail(file);
 					}
 				}
-			}else {
+			} else {
 				System.out.println("Couldn't find pay stubs");
 			}
 		} else {
